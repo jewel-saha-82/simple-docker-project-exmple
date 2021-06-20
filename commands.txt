@@ -1,0 +1,12 @@
+Commands:
+docker build .
+docker build -t dockercodebuildtest .
+docker run -P -d dockercodebuildtest
+docker ps
+http://192.168.99.100:32768/
+
+#below command will give the host ip in the machine. (WIN10)
+docker-machine ip
+
+
+
