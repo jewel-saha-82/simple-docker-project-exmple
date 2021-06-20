@@ -5,6 +5,7 @@ phases:
     runtime-versions:
       docker: 18
     commands:
+      - yum install sudo
       - sudo service docker start
 
   build:
