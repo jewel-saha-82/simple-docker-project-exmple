@@ -12,3 +12,12 @@ docker-machine ip
 
 
 
+################ Important #####################
+#For codebuild
+For Operating system, choose Ubuntu.
+For Runtime, choose Standard.
+For Image, choose aws/codebuild/standard:5.0.
+Because you use this build project to build a Docker image, select Privileged.
+
+
+
