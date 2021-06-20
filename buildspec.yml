@@ -1,12 +1,6 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      docker: 18
-    commands:
-      - yum -y install sudo
-      - sudo service docker start
 
   build:
     commands:
@@ -14,8 +8,6 @@ phases:
       - AWS_ACCOUNT_ID=271009710463
       - AWS_DEFAULT_REGION=ap-south-1
       - IMAGE_TAG=latest
-      - echo Build started on `date`
-      - echo Building the Docker image...
       - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 271009710463.dkr.ecr.ap-south-1.amazonaws.com
       - docker build -t simple-docker-project-example .
       - docker tag simple-docker-project-example:latest 271009710463.dkr.ecr.ap-south-1.amazonaws.com/simple-docker-project-example:latest
