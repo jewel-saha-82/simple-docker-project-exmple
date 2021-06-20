@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       docker: 18
     commands:
-      - service docker start
+      - sudo service docker start
 
   build:
     commands:
