@@ -8,5 +8,7 @@ http://192.168.99.100:32768/
 #below command will give the host ip in the machine. (WIN10)
 docker-machine ip
 
+#https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/get-login-password.html
+
 
 
